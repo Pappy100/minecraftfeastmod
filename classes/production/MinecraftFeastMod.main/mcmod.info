@@ -1,0 +1,16 @@
+[
+{
+  "modid": "feastmod",
+  "name": "Feast Mod",
+  "description": "Add various new foods to minecraft.",
+  "version": "0.1",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["CremBluRay", "Pappy100"],
+  "credits": "Forge Wiki. Literally couldn't do anything without it.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
