@@ -1,1 +1,8 @@
+#Items
 item.bread_roll.name=Bread Roll
+item.yeast.name=Yeast
+item.dough.name=Dough
+item.flour.name=Flour
+
+#Blocks
+tile.turkey_block.name=Turkey
