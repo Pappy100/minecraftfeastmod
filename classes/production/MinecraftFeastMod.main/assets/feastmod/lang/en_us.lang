@@ -1,1 +1,5 @@
+#Items
 item.bread_roll.name=Bread Roll
+
+#Blocks
+tile.turkey_block.name=Turkey
