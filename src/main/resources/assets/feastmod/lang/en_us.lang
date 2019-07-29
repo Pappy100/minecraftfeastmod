@@ -3,6 +3,10 @@ item.bread_roll.name=Bread Roll
 item.yeast.name=Yeast
 item.dough.name=Dough
 item.flour.name=Flour
+item.burger.name=Burger
 
 #Blocks
 tile.turkey_block.name=Turkey
+
+#Entities
+entity.turkey.name=Turkey

@@ -2,6 +2,7 @@ package com.github.crembluray.minecraftfeastmod;
 
 import com.github.crembluray.minecraftfeastmod.proxy.CommonProxy;
 import com.github.crembluray.minecraftfeastmod.util.Reference;
+import com.github.crembluray.minecraftfeastmod.util.handlers.RegistryHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -20,7 +21,7 @@ public class Main
 
     @Mod.EventHandler
     public static void PreInit(FMLPreInitializationEvent event) {
-
+        RegistryHandler.preInitRegistries(event);
     }
 
     @Mod.EventHandler
