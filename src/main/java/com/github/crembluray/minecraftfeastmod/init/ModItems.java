@@ -16,6 +16,7 @@ public class ModItems {
     // Food
     public static final Item BREAD_ROLL = new ItemCustomFood("bread_roll", 3, 0.3f, false);
     public static final ItemEffectFood DOUGH = new ItemEffectFood("dough", 1, 15, 0.3f, false);
+    public static final ItemEffectFood RAW_TURKEY = new ItemEffectFood("raw_turkey", 2, 30, 0.3f, false);
     public static final ItemCustomFood BURGER = new ItemCustomFood("burger", 8, 0.8f, false);
 
     // Non-edible foodstuffs
