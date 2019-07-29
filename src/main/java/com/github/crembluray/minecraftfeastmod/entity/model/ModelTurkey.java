@@ -105,6 +105,7 @@ public class ModelTurkey extends ModelBase {
         this.body.rotateAngleX = ((float)Math.PI / 2F);
         this.rightLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
         this.leftLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 1.4F * limbSwingAmount;
+        this.feathers.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 0.25f * limbSwingAmount;
         this.rightWing.rotateAngleZ = ageInTicks;
         this.leftWing.rotateAngleZ = -ageInTicks;
     }
