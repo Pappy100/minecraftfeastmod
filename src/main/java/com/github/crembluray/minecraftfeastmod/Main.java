@@ -31,7 +31,6 @@ public class Main
 
     @Mod.EventHandler
     public static void PostInit(FMLPostInitializationEvent event) {
-
     }
 
 
