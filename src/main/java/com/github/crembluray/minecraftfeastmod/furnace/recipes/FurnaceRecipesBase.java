@@ -7,9 +7,9 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class FurnaceRecipesBase {
 
-    private static Item input;
-    private static ItemStack output;
-    private static float xp;
+    private Item input;
+    private ItemStack output;
+    private float xp;
 
     public FurnaceRecipesBase(Item input, ItemStack output, float xp) {
         this.input = input;
@@ -19,7 +19,7 @@ public class FurnaceRecipesBase {
         ModFurnaceRecipes.RECIPES.add(this);
     }
 
-    public static void addRecipe() {
+    public void addRecipe() {
         GameRegistry.addSmelting(input, output, xp);
     }
 
