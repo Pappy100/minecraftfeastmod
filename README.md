@@ -1,4 +1,4 @@
-#### Minecraft Feast Mod
+# Minecraft Feast Mod ⛏️
 ---
 ### Description
 Add various new food items and entities to minecraft. Foods, such as the turkey, can be placed onto tables and eaten.
