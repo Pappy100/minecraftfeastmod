@@ -1,7 +1,9 @@
 package com.github.crembluray.minecraftfeastmod.util.handlers;
 
+import com.github.crembluray.minecraftfeastmod.furnace.recipes.FurnaceRecipesBase;
 import com.github.crembluray.minecraftfeastmod.init.ModBlocks;
 import com.github.crembluray.minecraftfeastmod.init.ModEntity;
+import com.github.crembluray.minecraftfeastmod.init.ModFurnaceRecipes;
 import com.github.crembluray.minecraftfeastmod.init.ModItems;
 import com.github.crembluray.minecraftfeastmod.util.IHasModel;
 import net.minecraft.block.Block;
@@ -11,6 +13,8 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 @Mod.EventBusSubscriber
 public class RegistryHandler {
@@ -40,9 +44,18 @@ public class RegistryHandler {
         }
     }
 
+
     public static void preInitRegistries(FMLPreInitializationEvent event) {
-        ModEntity.registerEntities();
-        RenderHandler.registerEntityRenderers();
+        try {
+            ModEntity.registerEntities();
+            RenderHandler.registerEntityRenderers();
+        }
+        catch(NoClassDefFoundError e) {
+            System.out.println(e);
+        }
+        for(FurnaceRecipesBase FRP : ModFurnaceRecipes.RECIPES) {
+            FRP.addRecipe();
+        }
     }
 
 }
